@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #000000;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+.month {
+  transition: transform 0.55s ease;
+
+}
+
+.month img {
+  height: 250px;
+}
+
+.month:hover {
+  transform: scale(1.1);
+}
+
+.paragraph {
+  padding: 40px;
+  font-size: 40px;
+}

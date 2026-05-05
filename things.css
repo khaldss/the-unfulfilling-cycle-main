@@ -1,133 +1,68 @@
-@charset "UTF-8";
-/* CSS Document */
-
-body{
-	overflow: hidden;
-	overflow-y: scroll;
-	margin: 0;
-	padding: 1vw 4vw 4vw;
-	font-family: 'Tahoma', sans-serif;
-	background-color: #ffffff;;
-    animation: body 1s linear;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-	font-weight: 300;
-	font-size: 16vw;
-	line-height: 1;
-	margin: -.3em -.3em 0;
-	white-space: nowrap;
-	overflow: hidden;
+body {
+  background: #000000;
+  padding: 30px;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-}
-.edit a {
-	color: white;
-}
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-	grid-gap: 4vw;
-}
-@media (max-width: 30em) {
-	ul {
-		grid-template-columns: 1fr;
-	}
-}
-li {
-	font-size: 2em;
-	font-weight: 500;
-	line-height: 1.2;
-	margin: .2em 0;
-	display: flex;
-}
-li a {
-	display: grid;
-	grid-template-columns: 25% 1fr;
-	position: relative;
-	grid-column-gap: .5em;
-}
-li img {
-	max-width: 100%;
-	border: 1px solid silver;
-}
-li a span {
-	width: 0;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-li a:hover,
-.nojs li a:focus,
-li a span {
-	background-color: hsla(101,50%,80%,0.50);
+.header img {
+  width: 450px;
+  height: auto;
+  display: block;
+  transition: transform 0.65s ease;
 }
-li:nth-of-type(2n) a:hover, 
-.nojs li:nth-of-type(2n) a:focus,
-li:nth-of-type(2n) a span { 
-	background-color: hsla(281,48%,89%,1.00); 
+
+.header img:hover {
+  transform: scale(3.08);
 }
-li:nth-of-type(3n) a:hover, 
-.nojs li:nth-of-type(3n) a:focus,
-li:nth-of-type(3n) a span { 
-	background-color: hsla(182,54%,89%,1.00); 
-}
-li:nth-of-type(5n) a:hover, 
-.nojs li:nth-of-type(5n) a:focus,
-li:nth-of-type(5n) a span { 
-	background-color: hsla(0,51%,89%,1.00); 
-}
-li:nth-of-type(7n) a:hover, 
-.nojs li:nth-of-type(7n) a:focus,
-li:nth-of-type(7n) a span { 
-	background-color: hsla(232,54%,89%,1.00); 
-}
-li:nth-of-type(11n) a:hover, 
-.nojs li:nth-of-type(11n) a:focus,
-li:nth-of-type(11n) a span { 
-	background-color: hsla(60,58%,89%,1.00); 
-}
-li:nth-of-type(13n) a:hover, 
-.nojs li:nth-of-type(13n) a:focus,
-li:nth-of-type(13n) a span { 
-	background-color: hsla(112,54%,89%,1.00); 
-}
-ul:focus-within li a:hover {
-	background-color: transparent;
+
+.everything {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
 }
 
 
-@keyframes body {
-  to {
-    background-color: #ffffff;
-  }
+
+.item {
+  height: 260px;
+  border: 2px solid #000000;
+  background: #ff0000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  overflow: visible;
 }
 
-.progress {
-  height: 6px;
-  width: 0%;
-  background-color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  animation: progress 1s linear;
+.item img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.85s ease;
 }
-.progress2 {
-  height: 6px;
-  width: 0%;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: progress 1s linear;
+
+.item:hover {
+  transform: scale(1.04);
+  z-index: 5;
 }
-@keyframes progress {
-  to {
-    background-color: white;
-    width: 100%;
-  }
+
+.item:hover img {
+  transform: scale(1.98);
 }
+

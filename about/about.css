@@ -1,0 +1,56 @@
+body{
+display: flex;
+height: 100vh;
+overflow: hidden;
+background: black;
+justify-content: center;
+align-items: center;
+}
+
+.abouthead {
+justify-content: center;
+z-index: 5;
+position: fixed;
+margin-top: -40%;
+display: flex;
+align-items: center;
+}
+
+.abouthead :hover {
+transform: scale(1.05);
+}
+
+.textbox {
+height: 50%;
+width: auto;
+display: flex;
+overflow: hidden;
+align-items: center;
+z-index: 3;
+justify-content: center;
+position: absolute;
+border: 10px solid red;
+
+}
+
+.movingtext {
+font-size: 6rem;
+text-align: center;
+color: red;
+font-family: sans-serif;
+z-index: 2;
+position: relative;
+animation: movingtext 55s linear infinite;
+top: 60%;
+width: 100%;
+transform: translateY(-50%);
+}
+
+@keyframes movingtext {
+0% {
+    transform: translateY(45%); 
+}
+100% {
+    transform: translateY(-100%); 
+}
+}

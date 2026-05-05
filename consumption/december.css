@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-img {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+}
+
+/* MONEY STYLE */
+.money {
+  position: absolute;
+  color: red;
+  text-decoration: none;
+  font-family: 'Bungee', sans-serif; 
+  font-size: 7.5vw;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.money:hover {
+  transform: scale(1.1);
+}
+
+/* POSITIONS (adjust these) */
+
+.m1 { top: 10%; left: 5%; transform: rotate(-10deg); }
+.m2 { top: 8%; right: 5%; transform: rotate(-10deg); }
+
+.m3 { top: 25%; left: 35%; }
+.m4 { top: 25%; left: 60%; }
+.m5 { top: 25%; right: 5%; transform: rotate(-10deg); }
+
+.m6 { top: 40%; left: 35%; }
+.m7 { top: 38%; left: 55%; transform: rotate(-10deg); }
+.m8 { top: 35%; right: 8%; transform: rotate(10deg); }
+
+.m9 { top: 50%; left: 65%; }
+
+.m10 { top: 45%; left: 5%; }
+.m11 { top: 60%; left: 20%; transform: rotate(-20deg); }
+.m12 { top: 60%; left: 40%; }
+
+.m13 { top: 70%; left: 30%; transform: rotate(-10deg); }
+.m14 { top: 75%; left: 50%; }
+.m15 { top: 70%; left: 70%; }
+
+.m16 { top: 60%; right: 2%; }
+.m17 { top: 85%; left: 30%; }
+.m18 { top: 85%; left: 60%; }

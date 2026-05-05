@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Something Obsession</title>
+<link rel="stylesheet" href="secondpage.css">
+</head>
+
+<body>
+  <main class="scene">
+
+    <div class="items">
+      <a href="items/benj.html" class="item-1"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-2"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-3"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-4"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-5"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-6"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-7"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-8"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-9"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-10"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-11"><img src="images/benj1.png"></a>
+      <a href="items/benj.html" class="item-12"><img src="images/benj1.png"></a>
+    </div>
+
+    <div class="panel" id="panel">
+
+      <div class="panel-bg"></div>
+
+      <div class="text-box">
+
+        <p class="chapter">Two</p>
+        <h1>THE ART OF<br>OBSESSION</h1>
+        <p class="paragraph">
+          In the obsession stage you know the tactics, you know the manipulation
+          but knowing all that doesn't help you at all because the fear of missing
+          out on something overrides your logic and your brain starts to think about
+          a better, happier, and more complete version of oneself. In that moment you
+          no longer obsess over the product but also the fantasy version of yourself.
+        </p>
+      </div>
+
+      
+        <div class="panel" id="panel">
+
+        <div class="panel-bg"></div>
+
+         <div class="stock-bar top-bar">
+        <span class="bar-track">
+          OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>    OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>
+         </div>
+
+         <div class="stock-bar middle-bar">
+        <span class="bar-track">
+          OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>    OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>
+         </div>
+
+         <div class="stock-bar bottom-bar">
+        <span class="bar-track">
+          OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>    OUT OF STOCK <span class="script">Obsession</span> OUT OF STOCK <span class="script">Obsession</span>
+        </span>
+         </div>
+        </div>
+    </div>
+    
+
+    <div class="border-strip top">
+      <div class="border-text">Satisfaction & Consumerism • Satisfaction & Consumerism •</div>
+    </div>
+
+    <div class="border-strip bottom">
+      <div class="border-text">Satisfaction & Consumerism • Satisfaction & Consumerism •</div>
+    </div>
+
+    <div class="border-strip left">
+      <div class="border-text vertical">Satisfaction & Consumerism • Satisfaction & Consumerism •</div>
+    </div>
+
+    <div class="border-strip right">
+      <div class="border-text vertical">Satisfaction & Consumerism • Satisfaction & Consumerism •</div>
+    </div>
+
+  </main>
+</body>
+<body>
+<script>
+const panel = document.getElementById('panel');
+const topBar = document.querySelector('.top-bar');
+const middleBar = document.querySelector('.middle-bar');
+const bottomBar = document.querySelector('.bottom-bar');
+
+panel.addEventListener('mousemove', (e) => {
+const rect = panel.getBoundingClientRect();
+const y = e.clientY - rect.top;
+const height = rect.height;
+
+topBar.style.opacity = 0;
+middleBar.style.opacity = 0;
+bottomBar.style.opacity = 0;
+
+if (y < height / 3) {
+topBar.style.opacity = 1;
+} else if (y < (height / 3) * 2) {
+ middleBar.style.opacity = 1;
+} else {
+bottomBar.style.opacity = 1;
+}
+    });
+
+panel.addEventListener('mouseleave', () => {
+topBar.style.opacity = 0;
+middleBar.style.opacity = 0;
+bottomBar.style.opacity = 0;
+    });
+</script>
+
+</body>
+</html>

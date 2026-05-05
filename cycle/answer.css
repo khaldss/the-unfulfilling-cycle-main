@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.symbol {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.text {
+  color: rgb(98, 94, 94);
+  font-size: 2.4rem;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.3;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.text:hover {
+  color: rgb(255, 0, 0);
+}

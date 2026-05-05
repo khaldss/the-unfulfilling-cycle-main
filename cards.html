@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item game</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+  <div class="header">
+  <a href="desire.html">
+    <img src="images/itemobssesed.png">
+  </a>
+</div>
+
+<div class="grid">
+  
+  <div class="card light"><img src="images/coffee.png"></div>
+  
+  <div class="card dark"><img src="images/footballboots1.png"></div>
+  
+  <div class="card light"><img src="images/glizzyy1.png"></div>
+  
+  <div class="card dark"><img src="images/benj1.png"></div>
+
+  <a href="obs.html" class="card dark">
+    <img src="images/bigharibo1.png">
+  </a>
+
+  <a href="obs.html" class="card light">
+    <img src="images/benj1.png">
+  </a>
+  
+  <div class="card dark"><img src="images/bigbike.1png.png"></div>
+
+  <div class="card light"><img src="images/soccerball1.png"></div>
+
+  <div class="card light"><img src="images/airforces1.png"></div>
+
+  <div class="card dark"><img src="images/trainticket1.png"></div>
+
+  <div class="card light"><img src="images/shorts1.png"></div>
+
+  <a href="desire.html" class="card back-card">
+    <img src="images/backbutton.png" alt="Back">
+  </a>
+
+</div>
+
+<!-- TOP BORDER -->
+<div class="border-strip top">
+  <div class="border-text">
+    Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •  Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •
+
+  </div>
+</div>
+
+<!-- BOTTOM BORDER -->
+<div class="border-strip bottom">
+  <div class="border-text">
+    Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •
+
+  </div>
+</div>
+
+<!-- LEFT BORDER -->
+<div class="border-strip left">
+  <div class="border-text vertical">
+    Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •  Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •
+
+  </div>
+</div>
+
+<!-- RIGHT BORDER -->
+<div class="border-strip right">
+  <div class="border-text vertical">
+    Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •  Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism • Satisfaction & Consumerism •
+
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+  const grid = document.querySelector(".grid");
+
+  /* GET ALL ITEMS INSIDE GRID */
+  const items = Array.from(grid.children);
+
+  /* SHUFFLE FUNCTION */
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  /* SHUFFLE THE ELEMENTS */
+  shuffle(items);
+
+  /* PUT THEM BACK INTO GRID */
+  items.forEach(item => grid.appendChild(item));
+</script>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #efefef;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.poster {
+  position: relative;
+  width: 760px;
+  height: 88vh;
+  max-width: 78vw;
+  max-height: 90vh;
+  background: #000000;
+  overflow: hidden;
+}
+
+/* TITLE BLOCK */
+.title-block {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86%;
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-family: "Special Elite", monospace;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #ff0000;
+  text-align: center;
+}
+
+/* ALL IMAGES */
+.item {
+  position: absolute;
+  object-fit: contain;
+}
+
+/* TOP ROW */
+.shoe {
+  top: 3%;
+  left: 3%;
+  width: 22%;
+}
+
+.burger {
+  top: 2.5%;
+  left: 29%;
+  width: 10%;
+}
+
+.gum {
+  top: 6%;
+  left: 37%;
+  width: 18%;
+}
+
+.car {
+  top: 2%;
+  right: 10%;
+  width: 27%;
+}
+
+.bottle {
+  top: 7%;
+  right: 3%;
+  width: 10%;
+}
+
+/* MIDDLE ROW */
+.hair {
+  top: 56%;
+  left: 2%;
+  width: 20%;
+}
+
+.glasses {
+  top: 10%;
+  left: 8%;
+  width: 12%;
+}
+
+.book {
+  top: 58%;
+  left: 42%;
+  width: 13%;
+}
+
+.bag {
+  top: 56%;
+  right: 3%;
+  width: 24%;
+}
+
+.mailbox {
+  top: 31%;
+  left: 28%;
+  width: 8%;
+}
+
+/* BOTTOM ROW */
+.face {
+  bottom: 2%;
+  left: 2%;
+  width: 14%;
+}
+
+.milk {
+  bottom: 10%;
+  left: 27%;
+  width: 14%;
+}
+
+.phone {
+  bottom: 2%;
+  left: 49%;
+  width: 13%;
+}
+
+.donut {
+  bottom: 10%;
+  right: 20%;
+  width: 13%;
+}
+
+.sweets {
+  bottom: 2%;
+  right: 2%;
+  width: 16%;
+}
+

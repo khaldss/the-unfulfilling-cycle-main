@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mint: #7cf0c7;
+  --black: #111;
+  --panel: #d9dce3;
+  --blue: #6d8cff;
+  --bg-top: #2a47b7;
+  --bg-bottom: #1a3a9e;
+  --strip-size: 28px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+}
+
+/* MAIN SCENE */
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CENTER PANEL */
+.panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 920px;
+  height: 540px;
+  max-width: 64vw;
+  max-height: 58vh;
+  background: var(--panel);
+  overflow: hidden;
+  z-index: 50;
+}
+
+/* IMAGE BACKGROUND INSIDE PANEL */
+.panel-bg {
+  position: absolute;
+  inset: 0;
+  background: url("images/11.png") center/cover no-repeat;
+  z-index: 1;
+}
+
+/* LIGHT PANEL WASH */
+.panel-tint {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* TEXT */
+.text-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 26px;
+}
+
+.chapter {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--blue);
+  font-size: 20px;
+  letter-spacing: 8px;
+  margin-bottom: 26px;
+}
+
+.text-overlay h1 {
+  font-family: "Press Start 2P", monospace;
+  color: #1949ff;
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+
+.copy {
+  width: 78%;
+  color: #1949ff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* HOVER BARS INSIDE PANEL */
+.stock-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 22px;
+  padding: 14px 0;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.top-bar {
+  top: 0;
+}
+
+.middle-bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom-bar {
+  bottom: 0;
+}
+
+.script {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 0 8px;
+}
+
+.bar-track {
+  display: inline-block;
+  animation: scroll 6s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+
+/* FLOATING ITEMS */
+.floating-items {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+
+.item-link {
+  position: absolute;
+  display: block;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.item-link:hover .item {
+  transform: scale(1.05);
+}
+
+.item-1 {
+  width: 220px;
+  top: 6%;
+  left: 5%;
+  transform: rotate(-18deg);
+}
+
+.item-2 {
+  width: 180px;
+  top: 4%;
+  left: 20%;
+  transform: rotate(14deg);
+}
+
+.item-3 {
+  width: 180px;
+  top: 6%;
+  right: 5%;
+  transform: rotate(16deg);
+}
+
+.item-4 {
+  width: 210px;
+  top: 39%;
+  right: 4%;
+  transform: rotate(-12deg);
+}
+
+.item-5 {
+  width: 170px;
+  bottom: 10%;
+  left: 7%;
+  transform: rotate(-20deg);
+}
+
+.item-6 {
+  width: 170px;
+  bottom: 14%;
+  right: 7%;
+  transform: rotate(18deg);
+}
+
+.item-7 {
+  width: 190px;
+  bottom: 4%;
+  left: 30%;
+  transform: rotate(8deg);
+}
+
+.item-8 {
+  width: 210px;
+  bottom: 4%;
+  right: 29%;
+  transform: rotate(-10deg);
+}
+
+.item-9 {
+  width: 180px;
+  top: 3%;
+  right: 19%;
+  transform: rotate(-12deg);
+}
+
+/* BORDER STRIPS */
+.border-strip {
+  position: absolute;
+  background: var(--mint);
+  overflow: hidden;
+  z-index: 60;
+}
+
+.top,
+.bottom {
+  left: 0;
+  width: 100%;
+  height: var(--strip-size);
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left,
+.right {
+  top: 0;
+  height: 100%;
+  width: var(--strip-size);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.border-text {
+  white-space: nowrap;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  padding-left: 8px;
+}
+
+.vertical {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}

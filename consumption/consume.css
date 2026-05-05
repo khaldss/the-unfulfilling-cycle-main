@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 58px;
+  font-family: Arial, sans-serif;
+}
+
+.poster {
+  position: relative;
+  width: 880px;
+  height: 100vh;
+  background: #000;
+  border: 30px solid #ff0000; 
+  overflow: visible; 
+}
+
+
+.title {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: clamp(3.4rem, 6.8vw, 5.2rem);
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.paragraph {
+  font-family: "Special Elite", monospace;
+  font-size: 2.8rem;
+  line-height: 1.7;
+  color: #ff0000;
+  text-align: center;
+}
+.item {
+  width: 230px;
+  position: absolute;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.item:hover {
+  transform: scale(2.05);
+  transition: transform 0.55s ease;
+}
+
+.shoe {
+  top: 1%;
+  left: -6%;
+}
+
+.burger {
+  top: 1%;
+  left: 32%;
+}
+
+.gum {
+  top: 4%;
+  left: 40%;
+}
+
+.keys {
+  top: 1%;
+  right: -6%;
+}
+
+.bottle {
+  top: 14%;
+  right: -4%;
+}
+
+.wallet {
+  top: 15%;
+  left: -3%;
+  width: 175px;
+}
+
+.apps {
+  top: 27%;
+  left: -3%;
+}
+
+.cake {
+  top: 40%;
+  left: 75%;
+  width: 170px;
+}
+
+.candy {
+  top: 22%;
+  right: 11%;
+}
+
+.melon{
+  top: -4%;
+  left: 10%;
+}
+
+.milk {
+  top: 7%;
+  left: 10%;
+}
+
+.shirt {
+  top: 4%;
+  left: 58%;
+}
+
+.donut {
+  top: 1%;
+  right: 11%;
+}
+
+
+
+@media (max-width: 1756px) {
+  .poster {
+    width: 75vw;
+    height: 130vh;
+  }
+
+.title {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  width: 99%;
+}
+
+.title h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 125px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: "Special Elite", monospace;
+  font-size: 28px;
+  color: #ff0000;
+  text-align: center;
+}
+
+  
+}
