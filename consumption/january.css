@@ -48,10 +48,10 @@ body {
 
 @keyframes color-change {
   0% {
-    color: #ff0000;
+    color: #00ffd5;
   }
   20% {
-    color: #ff7f00;
+    color: #ff0000;
   }
   40% {
     color: #ffff00;
@@ -60,10 +60,10 @@ body {
     color: #00ff00;
   }
   80% {
-    color: #0000ff;
+    color: #0004ff;
   }
   100% {
-    color: #ff00ff;
+    color: #f771f7;
   }
 }
 
