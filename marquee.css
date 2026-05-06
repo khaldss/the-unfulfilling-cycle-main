@@ -30,7 +30,7 @@ body {
   white-space: nowrap;
   font-weight: bold;
   color: red;
-  animation: scroll linear 20s infinite;
+  animation: scroll linear 50s infinite;
 }
 
 .line.reverse {

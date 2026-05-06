@@ -134,7 +134,7 @@ body {
 }
 
 .item-1 {
-  width: clamp(240px, 20vw, 420px);
+  width: 12vw;
   top: 6%;
   left: 4%;
   rotate: -18deg;

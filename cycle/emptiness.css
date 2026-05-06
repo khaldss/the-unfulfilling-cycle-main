@@ -33,7 +33,7 @@ body {
 
 
 .stage {
-  font-family: "Cormorant Garamond";
+  font-family: sans-serif;
   color: #ff0000;
   font-size: clamp(1.2rem, 1.6vw, 2rem);
   letter-spacing: 12px;
@@ -41,10 +41,11 @@ body {
 }
 
 .textbox h1 {
-  font-family: "Press Start 2P", monospace;
+  font-family: monospace;
   color: #ff0000;
   font-size: clamp(4rem, 8vw, 9rem);
   line-height: 1.1;
+  opacity: 0.50;
   margin-bottom: 90px;
 }
 
@@ -54,10 +55,10 @@ body {
   font-size: 50px;
   line-height: 1.9;
   font-weight: 800;
+  opacity: 0.40;
   text-transform: uppercase;
 }
 
-/* ribbons */
 .empty {
   position: absolute;
   z-index: 7;
@@ -81,7 +82,6 @@ body {
   animation: ribbonMove 98s linear infinite;
 }
 
-/* main movement */
 @keyframes ribbonMove {
   from {
     transform: translateX(0);
@@ -133,7 +133,6 @@ body {
 }
 
 
-/* BORDER STRIPS */
 .border {
   position: absolute;
   background: red;
@@ -149,7 +148,6 @@ body {
   z-index: 10;
 }
 
-/* TOP + BOTTOM */
 .top, .bottom {
   left: 0;
   width: 100%;
@@ -159,7 +157,6 @@ body {
 .top { top: 0; }
 .bottom { bottom: 0; }
 
-/* LEFT + RIGHT */
 .left, .right {
   top: 0;
   height: 100%;
@@ -301,7 +298,6 @@ body {
   transform: rotate(-18deg);
 }
 
-/* LAPTOP / MID SCREENS */
 @media (max-width: 1756px) {
   .textbox {
     width: 110vw;
