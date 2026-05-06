@@ -11,7 +11,7 @@ align-items: center;
 justify-content: center;
 z-index: 5;
 position: fixed;
-margin-top: -40%;
+margin-top: -38%;
 display: flex;
 align-items: center;
 }
@@ -40,7 +40,7 @@ color: red;
 font-family: sans-serif;
 z-index: 2;
 position: relative;
-animation: movingtext 55s linear infinite;
+animation: movingtext 45s linear infinite;
 top: 60%;
 width: 100%;
 transform: translateY(-50%);

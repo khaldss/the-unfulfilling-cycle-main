@@ -88,13 +88,13 @@ body {
 .toppopup {
   width: 580px;
   left: 50%;
-  top: 15%;
+  top: 5%;
   transform: translateX(-50%);
 }
 
 
 .bottompopup {
-  width: 520px;
+  width: 620px;
   left: 50%;
   bottom: 15%;
   transform: translateX(-50%);
