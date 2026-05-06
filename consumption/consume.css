@@ -8,7 +8,7 @@
 
 body {
   background: #000000;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,17 +134,13 @@ body {
 @media (max-width: 1756px) {
 
   .body {
-  height: 130vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 58px;
-  font-family: Arial, sans-serif;
-  }
+  height: 120vh;
+
+}
   .poster {
     width: 75vw;
-    height: 120vh;
-  }
+    height: 130vh;
+}
 
 .title {
   position: absolute;
