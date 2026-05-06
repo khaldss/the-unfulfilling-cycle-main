@@ -1,8 +1,8 @@
 const middleclock = document.getElementById("middleclock");
 
-const maxAngle = 34;
+const maxAngle = 44;
 const speed = 0.00202;
-const bobAmount = 8;
+const bobAmount = 18;
 
 function animate(timestamp) {
   const angle = Math.sin(timestamp * speed) * maxAngle;

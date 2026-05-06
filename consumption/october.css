@@ -42,7 +42,32 @@ body {
   font-weight: bold;
   font-style: italic;
   transition: 0.55s;
+
+  animation: color-change 30s linear infinite;
 }
+
+@keyframes color-change {
+  0% {
+    color: #ff0000;
+  }
+  20% {
+    color: #ff7f00;
+  }
+  40% {
+    color: #ffff00;
+  }
+  60% {
+    color: #00ff00;
+  }
+  80% {
+    color: #0000ff;
+  }
+  100% {
+    color: #ff00ff;
+  }
+}
+
+
 
 .money:hover {
   transform: scale(2.05);

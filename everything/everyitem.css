@@ -46,7 +46,7 @@ body {
 
 .item {
   height: 260px;
-  border: 2px solid #000000;
+  border: 28px solid #000000;
   background: #ff0000;
 
   display: flex;
@@ -55,6 +55,57 @@ body {
 
   text-decoration: none;
   overflow: visible;
+
+  animation: color-change 40s linear infinite;
+
+  box-shadow: 0 0 20px #ff0000 0 0 40px #ff0000,
+}
+
+@keyframes color-change {
+  0% {
+    background: #c40000;
+    box-shadow: 0 0 20px #c40000, 0 0 40px #c40000;
+  }
+  10% {
+    background: #00ccff;
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+  }
+  20% {
+    background: #ff00ff;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+  }
+  30% {
+    background: #00ff00;
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+  }
+  40% {
+    background: #ffff00;
+    box-shadow: 0 0 20px #ffff00, 0 0 40px #ffff00;
+  }
+  50% {
+    background: #106325;
+    box-shadow: 0 0 20px #106325, 0 0 40px #106325;
+  }
+  60% {
+    background: #ff6600;
+    box-shadow: 0 0 20px #ff6600, 0 0 40px #ff6600;
+  }
+  70% {
+    background: #6600ff;
+    box-shadow: 0 0 20px #6600ff, 0 0 40px #6600ff;
+  }
+  80% {
+    background: #00ffcc;
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  }
+  90% {
+    background: #ff0066;
+    box-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066;
+  }
+  100% {
+    background: #ff7b00;
+    box-shadow: 0 0 20px #ff7b00, 0 0 40px #ff7b00;
+  }
 }
 
 .item img {

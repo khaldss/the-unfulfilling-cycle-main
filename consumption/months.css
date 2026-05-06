@@ -7,7 +7,7 @@ body {
 }
 
 .month {
-  transition: transform 0.55s ease;
+  transition: transform 2.55s ease;
 
 }
 
@@ -22,4 +22,5 @@ body {
 .paragraph {
   padding: 40px;
   font-size: 40px;
+  line-height: 2.7;
 }

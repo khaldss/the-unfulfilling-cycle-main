@@ -96,7 +96,7 @@ body {
 .toppopup {
   width: 580px;
   left: 50%;
-  top: -10%;
+  top: 15%;
   transform: translateX(-50%);
 }
 
@@ -104,7 +104,7 @@ body {
 .bottompopup {
   width: 520px;
   left: 50%;
-  bottom: -9%;
+  bottom: 15%;
   transform: translateX(-50%);
 }
 
@@ -116,7 +116,6 @@ body {
 }
 
 
-/* BORDER STRIPS */
 .border {
   position: absolute;
   background: red;

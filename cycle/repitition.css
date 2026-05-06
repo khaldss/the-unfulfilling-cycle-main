@@ -151,6 +151,13 @@ body {
 
 }
 
+.item-16 {
+  top: 2%;
+  right: 1%;
+  width: 9vw;
+}
+
+
 .textbox {
   position: absolute;
   top: 50%;
@@ -193,7 +200,7 @@ body {
 .middleclock {
   position: absolute;
   left: 50%;
-  top: -8%;
+  top: -20%;
   width: 360px;
   transform: translateX(-50%);
   transform-origin: 50% 0%;

@@ -37,25 +37,25 @@ body {
   animation-direction: reverse;
 }
 
-.line1 { top: 6%; font-size: 6vw; }
+.one { top: 6%; font-size: 6vw; }
 
-.line2 { top: 15%; font-size: 6vw; }
+.two { top: 15%; font-size: 6vw; }
 
-.line3 { top: 24%; font-size: 6vw; }
+.three { top: 24%; font-size: 6vw; }
 
-.line4 { top: 33%; font-size: 7vw; }
+.four { top: 33%; font-size: 7vw; }
 
-.line5 { top: 43%; font-size: 7vw; }
+.five { top: 43%; font-size: 7vw; }
 
-.line6 { top: 54%; font-size: 6vw; }
+.six { top: 54%; font-size: 6vw; }
 
-.line7 { top: 63%; font-size: 6vw; }
+.seven { top: 63%; font-size: 6vw; }
 
-.line8 { top: 72%; font-size: 6vw; }
+.eight { top: 72%; font-size: 6vw; }
 
-.line9 { top: 81%; font-size: 6vw; }
+.nine { top: 81%; font-size: 6vw; }
 
-.line10 {
+.ten {
   top: 89%;
   font-size: 6vw;
   text-decoration: none;
@@ -64,7 +64,7 @@ body {
 }
 
 
-.line10:hover {
+.ten:hover {
   color: white;
 }
 

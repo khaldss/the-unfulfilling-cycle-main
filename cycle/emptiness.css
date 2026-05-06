@@ -37,7 +37,7 @@ body {
   color: #ff0000;
   font-size: clamp(1.2rem, 1.6vw, 2rem);
   letter-spacing: 12px;
-  margin-bottom: 60px; /* 🔥 BIG SPACE */
+  margin-bottom: 60px; 
 }
 
 .textbox h1 {

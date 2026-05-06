@@ -12,13 +12,13 @@
 
     <div class="backgroundpanel"></div>
 
-    <img src="images/button2.png"  class="hover toppopup"    id="popupadtop">
+    <img src="../images/button2.png"  class="hover toppopup"    id="popupadtop">
     
-    <img src="images/button.png"   class="hover middlepopup" id="popupadmiddle">
+    <img src="../images/button.png"   class="hover middlepopup" id="popupadmiddle">
 
-    <img src="images/button3.png"  class="hover bottompopup" id="popupadbottom">
+    <img src="../images/button3.png"  class="hover bottompopup" id="popupadbottom">
 
-    <img src="images/button4.png"  class="hover leftpopup"   id="popupadleft">
+    <img src="../images/button4.png"  class="hover leftpopup"   id="popupadleft">
       
 
     <div class="textbox">
@@ -39,36 +39,38 @@
 
     <a href="../items/eagles.html" class="item-1"><img src="../images/eagles1.png"></a>
 
-    <a href="items/footballboots.html" class="item-2"><img src="../images/footballboots1.png"></a>
+    <a href="../items/footballboots.html" class="item-2"><img src="../images/footballboots1.png"></a>
 
-    <a href="items/football.html" class="item-3"><img src="../images/soccerball1.png"></a>
+    <a href="../items/football.html" class="item-3"><img src="../images/soccerball1.png"></a>
 
-    <a href="items/basketball.html" class="item-4"><img src="../images/basketball.png"></a>
+    <a href="../items/basketball.html" class="item-4"><img src="../images/basketball.png"></a>
 
-    <a href="items/mouse.html" class="item-5"><img src="../images/mouse1.png"></a>
+    <a href="../items/mouse.html" class="item-5"><img src="../images/mouse1.png"></a>
 
-    <a href="items/benj.html" class="item-6"><img src="../images/cologne.png"></a>
+    <a href="../items/cologne.html" class="item-6"><img src="../images/cologne.png"></a>
 
-    <a href="items/plugextension.html" class="item-7"><img src="../images/plugextension.png"></a>
+    <a href="../items/plugextension.html" class="item-7"><img src="../images/plugextension.png"></a>
 
-    <a href="items/haribo.html" class="item-8"><img src="../images/bigharibo1.png"></a>
+    <a href="../items/haribo.html" class="item-8"><img src="../images/bigharibo1.png"></a>
 
-    <a href="items/nba.html" class="item-9"><img src="../images/nba.png"></a>
+    <a href="../items/nba.html" class="item-9"><img src="../images/nba.png"></a>
 
-    <a href="consumption/arsenal.html" class="item-10"><img src="../images/arsenal.png"></a>
+    <a href="../consumption/arsenal.html" class="item-10"><img src="../images/arsenal.png"></a>
 
-    <a href="items/glizzy.html" class="item-11"><img src="../images/glizzyy1.png"></a>
+    <a href="../items/glizzy.html" class="item-11"><img src="../images/glizzyy1.png"></a>
 
     <a href="happyquestion.html" class="item-12"><img src="../images/portable.png"></a>
 
   </div>
 
   <div class="border top">
-    TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • 
+    TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • 
+
   </div>
 
   <div class="border bottom">
-    TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • 
+    TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • 
+
   </div>
 
   <div class="border left">
@@ -78,4 +80,70 @@
   <div class="border right">
     TRENDING • VIRAL • MUST HAVE •TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE •  TRENDING • VIRAL • MUST HAVE • TRENDING • VIRAL • MUST HAVE • 
   </div>
+
+    <script>
+  const panel = document.getElementById("panel");
+  const popupadtop = document.getElementById("popupadtop");
+  const popupadmiddle = document.getElementById("popupadmiddle");
+  const popupadbottom = document.getElementById("popupadbottom");
+  const popupadleft = document.getElementById("popupadleft");
+
+  panel.addEventListener("mousemove", (e) => {
+    const rect = panel.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const width = rect.width;
+    const height = rect.height;
+
+    popupadtop.style.opacity = 0;
+    popupadmiddle.style.opacity = 0;
+    popupadbottom.style.opacity = 0;
+    popupadleft.style.opacity = 0;
+
+    if (
+      x > width * 0.25 &&
+      x < width * 0.75 &&
+      y > height * 0.05 &&
+      y < height * 0.25
+    ) {
+      popupadtop.style.opacity = 1;
+    }
+
+    else if (
+      x > width * 0.32 &&
+      x < width * 0.68 &&
+      y > height * 0.28 &&
+      y < height * 0.72
+    ) {
+      popupadmiddle.style.opacity = 1;
+    }
+    else if (
+      x > width * 0.25 &&
+      x < width * 0.75 &&
+      y > height * 0.75 &&
+      y < height * 0.95
+    ) {
+      popupadbottom.style.opacity = 1;
+    }
+
+    else if (
+      x > width * 0.05 &&
+      x < width * 0.22 &&
+      y > height * 0.30 &&
+      y < height * 0.75
+    ) {
+      popupadleft.style.opacity = 1;
+    }
+  });
+
+  panel.addEventListener("mouseleave", () => {
+    popupadtop.style.opacity = 0;
+    popupadmiddle.style.opacity = 0;
+    popupadbottom.style.opacity = 0;
+    popupadleft.style.opacity = 0;
+  });
+</script>
+
+</body>
+</html>
 
