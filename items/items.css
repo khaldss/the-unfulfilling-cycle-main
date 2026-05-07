@@ -19,9 +19,9 @@ body {
   overflow: hidden;
   position: relative;
 
-  background: linear-gradient(-45deg, #000000, #3d0c0c, #ff2424, #ff0000);
+  background: linear-gradient(-55deg, #000000, #3d0c0c, #ff2424, #ff0000);
   background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 10s ease infinite;
 
 }
 
