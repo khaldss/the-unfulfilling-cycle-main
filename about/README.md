@@ -3,5 +3,3 @@ the final page will be the every item page where you will be able to scroll thro
 
 My aim was to make the whole experience interactive as possible and something you move through constantly having to your mouse exploring each stage and uncovering the items that shaped my cycle.
 
-http://127.0.0.1:5500/
-
